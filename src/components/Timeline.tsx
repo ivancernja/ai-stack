@@ -361,7 +361,7 @@ export function Timeline() {
               {/* Current step indicator - cleaner design */}
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono font-semibold text-[#2e7d32]">
+                  <span className="text-xs font-mono font-semibold text-[#2e7d32] whitespace-nowrap">
                     {currentFeature.time}
                   </span>
                   <div className="h-px flex-1 bg-[#e0d6c9]"></div>
@@ -406,7 +406,7 @@ export function Timeline() {
                 {/* Header section with text */}
                 <div className="p-6 pb-4">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-mono font-bold text-[#2e7d32] bg-[#f0e9e0] px-2 py-1 rounded">
+                    <span className="text-xs font-mono font-bold text-[#2e7d32] bg-[#f0e9e0] px-2 py-1 rounded whitespace-nowrap">
                       {feature.time}
                     </span>
                     <h3 className="text-xl font-semibold text-[#3e2723]">
@@ -450,7 +450,7 @@ export function Timeline() {
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="text-xs font-mono font-bold text-[#2e7d32] bg-[#f0e9e0] px-2 py-1 rounded">
+                        <span className="text-xs font-mono font-bold text-[#2e7d32] bg-[#f0e9e0] px-2 py-1 rounded whitespace-nowrap">
                           {feature.time}
                         </span>
                         <h3 className="text-xl font-semibold text-[#3e2723]">
