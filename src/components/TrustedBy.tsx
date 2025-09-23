@@ -62,8 +62,8 @@ export function TrustedBy() {
           Trusted by 50,000+ developers
         </div>
       </div>
-      <div className="pt-3">
-        <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
+      <div className="pt-3 overflow-hidden">
+        <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl px-4 sm:px-6 lg:px-0">
           <Carousel
             opts={{ 
               loop: true,
@@ -83,9 +83,9 @@ export function TrustedBy() {
               {[...companies, ...companies].map((company, index) => (
                 <CarouselItem
                   key={`${company.id}-${index}`}
-                  className="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
+                  className="flex basis-1/2 justify-center pl-0 xs:basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
                 >
-                  <div className="mx-8 flex shrink-0 items-center justify-center">
+                  <div className="mx-2 sm:mx-4 md:mx-6 lg:mx-8 flex shrink-0 items-center justify-center">
                     <div>
                       <img
                         src={company.image}

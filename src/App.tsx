@@ -44,7 +44,6 @@ function App() {
         <div className="max-w-[1100px] w-full mx-auto">
 
           {/* Powered by Technologies Section with Stack Grid */}
-          <FluidReveal direction="up" delay={200}>
           <div className="relative mb-12 md:mb-20">
             {/* Powered by section */}
             <div className="flex flex-col items-center gap-6 md:gap-8 mb-8 md:mb-12">
@@ -136,7 +135,6 @@ function App() {
               </a>
             </div>
           </div>
-          </FluidReveal>
 
           {/* Trusted By */}
           <FluidReveal direction="up" delay={100}>
