@@ -1,6 +1,5 @@
 import { ExternalLink, Code, Database, Lock, CreditCard, Zap } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 const HeroOption4 = () => {
   return (

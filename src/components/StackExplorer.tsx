@@ -60,17 +60,6 @@ const stackComponents: StackComponent[] = [
 
 export function StackExplorer() {
   const [hoveredComponent, setHoveredComponent] = useState<string | null>(null)
-  const [selectedComponent, setSelectedComponent] = useState<string | null>(null)
-
-  const getConnectionPath = (from: StackComponent, to: StackComponent) => {
-    const startX = from.position.x
-    const startY = from.position.y
-    const endX = to.position.x
-    const endY = to.position.y
-    
-    return `M ${startX} ${startY} Q ${(startX + endX) / 2} ${(startY + endY) / 2 - 10} ${endX} ${endY}`
-  }
-
   const isComponentConnected = (componentId: string) => {
     if (!hoveredComponent) return false
     const hoveredComp = stackComponents.find(c => c.id === hoveredComponent)
@@ -180,7 +169,7 @@ export function StackExplorer() {
                 <span className="text-sm text-[#737373]">Services</span>
                 <div className="flex items-center gap-2">
                   <div className="flex gap-1">
-                    {stackComponents.slice(0, 4).map((component, i) => (
+                    {stackComponents.slice(0, 4).map((component) => (
                       <div 
                         key={component.id}
                         className={`w-2 h-2 rounded transition-all duration-300 ${

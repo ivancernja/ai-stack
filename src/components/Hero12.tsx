@@ -1,6 +1,3 @@
-import { ExternalLink } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
 
 const Hero12 = () => {
   return (

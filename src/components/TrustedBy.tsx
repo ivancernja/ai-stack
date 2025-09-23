@@ -8,12 +8,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-interface Logo {
-  id: string;
-  description: string;
-  image: string;
-  className?: string;
-}
 
 const companies = [
   {

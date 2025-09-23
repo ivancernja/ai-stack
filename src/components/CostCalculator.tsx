@@ -26,24 +26,20 @@ export function CostCalculator() {
   const savingsPercent = Math.round((savings / traditionalTotal) * 100)
 
   const [animatedSavings, setAnimatedSavings] = useState(0)
-  const [animatedPercent, setAnimatedPercent] = useState(0)
 
   useEffect(() => {
     const duration = 1000
     const steps = 60
     const savingsStep = savings / steps
-    const percentStep = savingsPercent / steps
     
     let currentStep = 0
     const interval = setInterval(() => {
       currentStep++
       setAnimatedSavings(Math.round(savingsStep * currentStep))
-      setAnimatedPercent(Math.round(percentStep * currentStep))
       
       if (currentStep >= steps) {
         clearInterval(interval)
         setAnimatedSavings(savings)
-        setAnimatedPercent(savingsPercent)
       }
     }, duration / steps)
 
@@ -189,7 +185,7 @@ export function CostCalculator() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .slider::-webkit-slider-thumb {
           appearance: none;
           height: 12px;

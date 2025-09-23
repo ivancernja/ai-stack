@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { ScaleDemo } from "./ScaleDemo";
-import { LeapCTA } from "./LeapCTA";
 
 // Interactive components for each step
 const IdeaInput = () => {
@@ -397,7 +396,7 @@ export function Timeline() {
             {timelineFeatures.map((feature, index) => (
               <div 
                 key={index} 
-                ref={el => sectionRefs.current[index] = el}
+                ref={el => { sectionRefs.current[index] = el; }}
                 className={`rounded-lg border p-2 transition-all duration-700 ease-out ${
                   index === activeStep 
                     ? 'border-[#2e7d32] bg-white shadow-lg scale-100 opacity-100' 

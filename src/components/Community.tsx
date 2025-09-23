@@ -58,7 +58,7 @@ export function Community() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
-        {communityLinks.map((link, index) => (
+        {communityLinks.map((link) => (
           <a
             key={link.name}
             href={link.url}
