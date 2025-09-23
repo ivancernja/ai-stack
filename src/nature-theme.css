@@ -1,0 +1,143 @@
+/* Nature Theme CSS Variables - Based on tweakcn nature theme */
+:root {
+  /* Font families */
+  --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Merriweather, ui-serif, Georgia, serif;
+  --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Primary Theme Colors */
+  --background: #f8f5f0;
+  --foreground: #3e2723;
+  --primary: #2e7d32;
+  --primary-foreground: #ffffff;
+  
+  /* Secondary & Accent Colors */
+  --secondary: #e8f5e9;
+  --secondary-foreground: #1b5e20;
+  --accent: #c8e6c9;
+  --accent-foreground: #1b5e20;
+  
+  /* UI Component Colors */
+  --card: #f8f5f0;
+  --card-foreground: #3e2723;
+  --popover: #f8f5f0;
+  --popover-foreground: #3e2723;
+  --muted: #f0e9e0;
+  --muted-foreground: #6d4c41;
+  
+  /* Utility & Form Colors */
+  --border: #e0d6c9;
+  --input: #e0d6c9;
+  --ring: #2e7d32;
+  
+  /* Status & Feedback Colors */
+  --destructive: #c62828;
+  --destructive-foreground: #ffffff;
+  
+  /* Chart & Visualization Colors */
+  --chart-1: #4caf50;
+  --chart-2: #388e3c;
+  --chart-3: #2e7d32;
+  --chart-4: #1b5e20;
+  --chart-5: #0a1f0c;
+  
+  /* Sidebar & Navigation Colors */
+  --sidebar-background: #f0e9e0;
+  --sidebar-foreground: #3e2723;
+  --sidebar-primary: #2e7d32;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #c8e6c9;
+  --sidebar-accent-foreground: #1b5e20;
+  --sidebar-border: #e0d6c9;
+  --sidebar-ring: #2e7d32;
+  
+  --radius: 0.5rem;
+  
+  /* Letter spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #f8f5f0;
+    
+    --card: #1a1a1a;
+    --card-foreground: #f8f5f0;
+    
+    --popover: #1a1a1a;
+    --popover-foreground: #f8f5f0;
+    
+    --primary: #4caf50;
+    --primary-foreground: #1a1a1a;
+    
+    --secondary: #2d3a2e;
+    --secondary-foreground: #c8e6c9;
+    
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    
+    --accent: #2d3a2e;
+    --accent-foreground: #c8e6c9;
+    
+    --destructive: #ef4444;
+    --destructive-foreground: #1a1a1a;
+    
+    --border: #3a3a3a;
+    --input: #3a3a3a;
+    --ring: #4caf50;
+    
+    --sidebar-background: #262626;
+    --sidebar-foreground: #f8f5f0;
+    --sidebar-primary: #4caf50;
+    --sidebar-primary-foreground: #1a1a1a;
+    --sidebar-accent: #2d3a2e;
+    --sidebar-accent-foreground: #c8e6c9;
+    --sidebar-border: #3a3a3a;
+    --sidebar-ring: #4caf50;
+  }
+}
+
+/* Base styling */
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Utility classes */
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-muted { background-color: var(--muted); }
+.bg-accent { background-color: var(--accent); }
+.bg-border { background-color: var(--border); }
+
+.text-foreground { color: var(--foreground); }
+.text-primary { color: var(--primary); }
+.text-muted-foreground { color: var(--muted-foreground); }
+.text-secondary-foreground { color: var(--secondary-foreground); }
+.text-primary-foreground { color: var(--primary-foreground); }
+
+.border-border { border-color: var(--border); }
+
+.font-sans { font-family: var(--font-sans); }
+.font-serif { font-family: var(--font-serif); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Enhanced transitions */
+.transition-nature {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
