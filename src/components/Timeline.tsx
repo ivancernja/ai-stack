@@ -331,9 +331,19 @@ export function Timeline() {
   return (
     <section className="mb-24" ref={containerRef}>
       <div className="container max-w-6xl mx-auto">
-        <div className="relative grid gap-16 md:grid-cols-2">
-          {/* Left side - sticky content that changes */}
-          <div className="top-40 h-fit md:sticky">
+        {/* Mobile-only header */}
+        <div className="block md:hidden mb-12 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-[#3e2723]">
+            Start with just words
+          </h2>
+          <p className="text-base text-[#6d4c41] leading-relaxed mb-6">
+            No technical knowledge required. Simply describe what you want to build and watch the magic happen in 4 simple steps.
+          </p>
+        </div>
+
+        <div className="relative grid gap-8 md:gap-16 md:grid-cols-2">
+          {/* Left side - sticky content that changes (hidden on mobile, shown on desktop) */}
+          <div className="top-40 h-fit md:sticky hidden md:block">
             <div className="transition-all duration-500 ease-in-out min-h-[400px]">
               <h2 className="mt-4 mb-6 text-3xl font-semibold md:text-4xl text-[#3e2723] tracking-tight">
                 {currentFeature.leftContent.heading}
