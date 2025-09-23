@@ -67,7 +67,7 @@ export function FAQ() {
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#6d4c41] leading-relaxed pb-6">
-                {faq.answer}
+                <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </AccordionContent>
             </AccordionItem>
           ))}

@@ -11,12 +11,6 @@ import {
 
 const companies = [
   {
-    id: "yc",
-    description: "Y Combinator",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='36' font-weight='bold' text-anchor='middle' fill='%236d4c41'%3EYC%3C/text%3E%3C/svg%3E",
-    className: "h-12 w-auto opacity-60"
-  },
-  {
     id: "vercel",
     description: "Vercel",
     image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EVercel%3C/text%3E%3C/svg%3E",
