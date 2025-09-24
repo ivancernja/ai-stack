@@ -19,7 +19,7 @@ const Hero12 = () => {
                 for building scalable apps
               </h1>
               <p className="mx-auto max-w-3xl text-[#6d4c41] lg:text-xl mb-6">
-                From idea to live app that scales with your growth. No coding experience needed. AI builds everything - frontend, backend, payments, and one-click deployment included.
+                From idea to live app that scales with your growth. No coding experience needed to get started. AI builds everything - frontend, backend, payments, and one-click deployment included.
               </p>
               
               {/* Subtle calculator link */}
