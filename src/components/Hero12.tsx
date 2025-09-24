@@ -1,4 +1,6 @@
 
+import { ScaleSlider } from "./ScaleSlider";
+
 const Hero12 = () => {
   return (
     <section className="relative overflow-hidden py-16">
@@ -23,7 +25,10 @@ const Hero12 = () => {
               </p>
             </div>
             
-            {/* Simple metrics line */}
+            {/* Interactive Scale Slider */}
+            <div className="w-full max-w-2xl">
+              <ScaleSlider />
+            </div>
 
           </div>
         </div>
