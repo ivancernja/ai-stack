@@ -11,45 +11,39 @@ import {
 
 const companies = [
   {
-    id: "vercel",
-    description: "Vercel",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EVercel%3C/text%3E%3C/svg%3E",
+    id: "google",
+    description: "Google",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EGoogle%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   },
   {
-    id: "linear",
-    description: "Linear",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ELinear%3C/text%3E%3C/svg%3E",
+    id: "microsoft",
+    description: "Microsoft",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='26' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EMicrosoft%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   },
   {
-    id: "cal",
-    description: "Cal.com",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='24' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ECal.com%3C/text%3E%3C/svg%3E",
-    className: "h-12 w-auto opacity-60"
-  },
-  {
-    id: "stripe",
-    description: "Stripe",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EStripe%3C/text%3E%3C/svg%3E",
+    id: "nvidia",
+    description: "Nvidia",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ENvidia%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   },
   {
     id: "spotify",
     description: "Spotify",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='26' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ESpotify%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ESpotify%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   },
   {
-    id: "notion",
-    description: "Notion",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3ENotion%3C/text%3E%3C/svg%3E",
+    id: "meta",
+    description: "Meta",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='30' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EMeta%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   },
   {
-    id: "discord",
-    description: "Discord",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='26' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EDiscord%3C/text%3E%3C/svg%3E",
+    id: "airbnb",
+    description: "Airbnb",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='100' y='40' font-family='Arial, sans-serif' font-size='28' font-weight='600' text-anchor='middle' fill='%236d4c41'%3EAirbnb%3C/text%3E%3C/svg%3E",
     className: "h-12 w-auto opacity-60"
   }
 ];
@@ -59,7 +53,7 @@ export function TrustedBy() {
     <section className="mb-24">
       <div className="container flex flex-col items-center text-center">
         <div className="text-sm font-medium mb-4 text-[#6d4c41] uppercase tracking-wide">
-          Trusted by 50,000+ developers
+          Chosen by professionals from
         </div>
       </div>
       <div className="pt-3 overflow-hidden">

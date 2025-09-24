@@ -83,10 +83,10 @@ export function Integrations() {
     <div className="mb-24">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-6 leading-tight text-[#3e2723]">
-          Works with your <span className="italic">favorite</span> tools
+          AI <span className="italic">automated</span> integrations
         </h2>
         <p className="text-lg text-[#6d4c41] leading-relaxed max-w-2xl mx-auto">
-          Seamlessly integrate with the tools your team already uses. One-click setup for popular services.
+          Leap automatically connects with your favorite tools. No manual setup required.
         </p>
       </div>
 
