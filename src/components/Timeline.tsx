@@ -269,7 +269,7 @@ const timelineFeatures = [
       "Payments & subscriptions ready",
       "Built-in user analytics",
       "Enterprise security features",
-      "99.9% uptime guarantee"
+      "Production-ready infrastructure"
     ],
     component: "live"
   },

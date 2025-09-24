@@ -122,7 +122,7 @@ export function ScaleDemo() {
                 <div className="flex items-center gap-1 sm:gap-2">
                   <div className="w-16 sm:w-20 h-1.5 sm:h-2 bg-[#e0d6c9] rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] transition-all duration-1000 ease-out"
+                      className="h-full bg-gradient-to-r from-[#2e7d32] to-[#1b5e20] transition-all duration-1000 ease-out"
                       style={{ width: `${memory}%` }}
                     />
                   </div>

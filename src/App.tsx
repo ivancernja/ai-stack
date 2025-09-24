@@ -6,34 +6,14 @@ import { FAQ } from './components/FAQ'
 import { Integrations } from './components/Integrations'
 import { TrustedBy } from './components/TrustedBy'
 import { FluidReveal } from './components/FluidReveal'
+import { ScaleCalculator } from './components/ScaleCalculator'
 
 function App() {
   return (
     <div className="font-sans bg-[#f8f5f0] text-[#3e2723] min-h-screen flex flex-col text-base leading-6 scroll-smooth">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 px-4 md:px-12 py-4 md:py-8 flex justify-between items-center z-20">
+      <header className="absolute top-0 left-0 right-0 px-4 md:px-12 py-4 md:py-8 z-20">
         <div className="text-sm font-semibold tracking-tight">LEAP STACK</div>
-        <nav className="hidden md:flex gap-8 items-center">
-          <a href="#demo" className="text-[#6d4c41] no-underline text-sm transition-all duration-200 hover:text-[#2e7d32] relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#2e7d32] after:left-0 after:-bottom-1 after:transition-all after:duration-200 hover:after:w-full">
-            Demo
-          </a>
-          <a href="#docs" className="text-[#6d4c41] no-underline text-sm transition-all duration-200 hover:text-[#2e7d32] relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#2e7d32] after:left-0 after:-bottom-1 after:transition-all after:duration-200 hover:after:w-full">
-            Docs
-          </a>
-          <a href="#pricing" className="text-[#6d4c41] no-underline text-sm transition-all duration-200 hover:text-[#2e7d32] relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#2e7d32] after:left-0 after:-bottom-1 after:transition-all after:duration-200 hover:after:w-full">
-            Pricing
-          </a>
-          <a 
-            href="https://leap.new" 
-            className="bg-[#2e7d32] text-white px-4 py-2 rounded-md no-underline text-sm font-medium transition-all duration-200 hover:opacity-90"
-          >
-            Get Started
-          </a>
-        </nav>
-        {/* Mobile menu button */}
-        <button className="md:hidden bg-[#2e7d32] text-white px-3 py-2 rounded-md text-sm font-medium">
-          Menu
-        </button>
       </header>
 
       {/* Hero Section */}
@@ -147,15 +127,15 @@ function App() {
             <Timeline />
           </FluidReveal>
 
-          {/* Interactive CTA - Try Leap Stack */}
+          {/* Scale Calculator + Try it yourself */}
           <FluidReveal direction="up" delay={200}>
-            <LeapCTA />
+            <ScaleCalculator />
           </FluidReveal>
 
           {/* Nature Case Studies */}
-          <FluidReveal direction="up" delay={100}>
+          {/* <FluidReveal direction="up" delay={100}>
             <CaseStudiesNature />
-          </FluidReveal>
+          </FluidReveal> */}
 
           {/* Integrations */}
           <FluidReveal direction="up" delay={100}>
