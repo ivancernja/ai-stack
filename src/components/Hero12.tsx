@@ -1,29 +1,5 @@
 
-import { useState } from "react";
-
 const Hero12 = () => {
-  const [selectedPath, setSelectedPath] = useState("mvp")
-  
-  const growthPaths = {
-    mvp: {
-      title: "MVP / Beta Launch",
-      description: "Start small, validate fast",
-      infrastructure: "Auto-scales from day one",
-      timeline: "Live in minutes"
-    },
-    growth: {
-      title: "Growth Phase", 
-      description: "Users are coming, traffic growing",
-      infrastructure: "Handles traffic spikes seamlessly", 
-      timeline: "Zero downtime scaling"
-    },
-    viral: {
-      title: "Viral Growth",
-      description: "Sudden surge, need instant scale",
-      infrastructure: "Elastic infrastructure adapts instantly",
-      timeline: "Scales faster than your growth"
-    }
-  }
   return (
     <section className="relative overflow-hidden py-8 md:py-12 mt-20">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">

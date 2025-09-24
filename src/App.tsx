@@ -1,7 +1,5 @@
 import { Hero12 } from './components/Hero12'
 import { Timeline } from './components/Timeline'
-import { LeapCTA } from './components/LeapCTA'
-import { CaseStudiesNature } from './components/CaseStudiesNature'
 import { FAQ } from './components/FAQ'
 import { Integrations } from './components/Integrations'
 import { TrustedBy } from './components/TrustedBy'

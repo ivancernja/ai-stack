@@ -133,7 +133,7 @@ export function ScaleCalculator() {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         input[type="range"]::-webkit-slider-thumb {
           appearance: none;
           width: 16px;
