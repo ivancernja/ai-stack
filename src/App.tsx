@@ -22,9 +22,9 @@ function App() {
         <div className="max-w-[1100px] w-full mx-auto">
 
           {/* Powered by Technologies Section with Stack Grid */}
-          <div className="relative mb-12 md:mb-20">
+          <div className="relative mb-8 md:mb-12">
             {/* Powered by section */}
-            <div className="flex flex-col items-center gap-6 md:gap-8 mb-8 md:mb-12">
+            <div className="flex flex-col items-center gap-4 md:gap-6 mb-6 md:mb-8">
               <p className="font-medium text-[#6d4c41] text-center">
                 Powered by best-in-class technologies
               </p>

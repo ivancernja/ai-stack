@@ -50,7 +50,7 @@ const companies = [
 
 export function TrustedBy() {
   return (
-    <section className="mb-24">
+    <section className="mb-12 md:mb-16">
       <div className="container flex flex-col items-center text-center">
         <div className="text-sm font-medium mb-4 text-[#6d4c41] uppercase tracking-wide">
           Chosen by professionals from
